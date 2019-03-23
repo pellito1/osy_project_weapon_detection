@@ -1,3 +1,5 @@
+# Found on https://stackoverflow.com/questions/45652575/tensorflow-object-detection, posted by David.
+
 import os
 import cv2
 import time
@@ -6,7 +8,7 @@ import multiprocessing
 import numpy as np
 import tensorflow as tf
 
-from cam_utils import FPS, WebcamVideoStream
+from webcam_detection.cam_utils import FPS, WebcamVideoStream
 from multiprocessing import Queue, Pool
 from object_detection.utils import label_map_util
 from object_detection.utils import visualization_utils as vis_util
@@ -15,7 +17,6 @@ CWD_PATH = os.getcwd()
 
 # Path to frozen detection graph. This is the actual model that is used for the object detection.
 PATH_TO_CKPT = './gun_inference_graph_img_resize_15548/frozen_inference_graph.pb'
-# PATH_TO_CKPT = '/Users/romainpelloie/Documents/Object_detection/models/research/object_detection/gun_inference_graph_init_14418/frozen_inference_graph.pb'
 
 # List of the strings that is used to add correct label for each box.
 PATH_TO_LABELS = './label.pbtxt'

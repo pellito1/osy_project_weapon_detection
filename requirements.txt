@@ -6,3 +6,4 @@ tensorflow==1.2.1
 six==1.10.0
 Pillow==4.2.1
 protobuf==3.3.0
+opencv-python
